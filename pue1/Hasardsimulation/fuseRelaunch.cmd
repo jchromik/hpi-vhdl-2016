@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/media/sf_ise/Hasardsimulation/mux2to1_isim_beh.exe" -prj "/media/sf_ise/Hasardsimulation/mux2to1_beh.prj" "work.mux2to1" 
