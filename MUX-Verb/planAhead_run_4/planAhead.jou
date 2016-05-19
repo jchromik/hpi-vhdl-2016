@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Tue May 17 14:04:40 2016
+# Process ID: 31078
+# Log file: /home/scandic/VHDL/MUX-Verb/planAhead_run_4/planAhead.log
+# Journal file: /home/scandic/VHDL/MUX-Verb/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/scandic/VHDL/MUX-Verb/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin R15 [get_ports {ax[2]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {ax[1]}]
+endgroup
+set_property package_pin "" [get_ports [list  {ay[1]}]]
+startgroup
+set_property package_pin L16 [get_ports {ay[2]}]
+endgroup
+startgroup
+set_property package_pin J15 [get_ports {ay[1]}]
+endgroup
+set_property package_pin "" [get_ports [list  {Xa[4]}]]
+startgroup
+set_property package_pin M17 [get_ports {Xa[4]}]
+endgroup
+startgroup
+set_property package_pin P18 [get_ports {Xa[3]}]
+endgroup
+startgroup
+set_property package_pin N17 [get_ports {Xa[2]}]
+endgroup
+startgroup
+set_property package_pin M18 [get_ports {Xa[1]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {Ye[4]}]
+endgroup
+startgroup
+set_property package_pin J13 [get_ports {Ye[3]}]
+endgroup
+startgroup
+set_property package_pin K15 [get_ports {Ye[2]}]
+endgroup
+startgroup
+set_property package_pin H17 [get_ports {Ye[1]}]
+endgroup
+startgroup
+set_property package_pin K15 [get_ports {Ye[2]}]
+endgroup
+startgroup
+set_property package_pin H17 [get_ports {Ye[1]}]
+endgroup
+save_constraints
+set_property iostandard LVCMOS33 [get_ports [list {ax[2]} {ax[1]}]]
+set_property iostandard LVCMOS33 [get_ports [list {ay[2]} {ay[1]}]]
+set_property iostandard LVCMOS33 [get_ports [list {Xa[4]} {Xa[3]} {Xa[2]} {Xa[1]}]]
+set_property iostandard LVCMOS33 [get_ports [list {Ye[4]} {Ye[3]} {Ye[2]} {Ye[1]}]]
+save_constraints

@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "/home/scandic/VHDL/MUX-Verb/pUe11.xst" -ofn "/home/scandic/VHDL/MUX-Verb/pUe11.syr" 
+xst -intstyle ise -ifn "/home/scandic/VHDL/MUX-Verb/pUe11.xst" -ofn "/home/scandic/VHDL/MUX-Verb/pUe11.syr" 
+xst -intstyle ise -ifn "/home/scandic/VHDL/MUX-Verb/pUe11.xst" -ofn "/home/scandic/VHDL/MUX-Verb/pUe11.syr" 
+xst -intstyle ise -ifn "/home/scandic/VHDL/MUX-Verb/pUe11.xst" -ofn "/home/scandic/VHDL/MUX-Verb/pUe11.syr" 
+xst -intstyle ise -ifn "/home/scandic/VHDL/MUX-Verb/pUe11.xst" -ofn "/home/scandic/VHDL/MUX-Verb/pUe11.syr" 
+xst -intstyle ise -ifn "/home/scandic/VHDL/MUX-Verb/pUe11.xst" -ofn "/home/scandic/VHDL/MUX-Verb/pUe11.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pUe11.ucf -p xc7a100t-csg324-1 pUe11.ngc pUe11.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o pUe11_map.ncd pUe11.ngd pUe11.pcf 
+par -w -intstyle ise -ol high -mt off pUe11_map.ncd pUe11.ncd pUe11.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml pUe11.twx pUe11.ncd -o pUe11.twr pUe11.pcf -ucf pUe11.ucf 
+bitgen -intstyle ise -f pUe11.ut pUe11.ncd 
+bitgen -intstyle ise -f pUe11.ut pUe11.ncd 

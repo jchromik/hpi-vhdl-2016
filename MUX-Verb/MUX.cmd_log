@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/scandic/VHDL/MUX-Verb/MUX.xst" -ofn "/home/scandic/VHDL/MUX-Verb/MUX.syr" 
+xst -intstyle ise -ifn "/home/scandic/VHDL/MUX-Verb/MUX.xst" -ofn "/home/scandic/VHDL/MUX-Verb/MUX.syr" 

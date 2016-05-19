@@ -1,0 +1,30 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "ax[2]" LOC = R15;
+NET "ax[1]" LOC = M13;
+NET "ay[2]" LOC = L16;
+NET "ay[1]" LOC = J15;
+NET "Xa[4]" LOC = M17;
+NET "Xa[3]" LOC = P18;
+NET "Xa[2]" LOC = N17;
+NET "Xa[1]" LOC = M18;
+NET "Ye[4]" LOC = N14;
+NET "Ye[3]" LOC = J13;
+NET "Ye[2]" LOC = K15;
+NET "Ye[1]" LOC = H17;
+
+# PlanAhead Generated IO constraints 
+
+NET "ax[2]" IOSTANDARD = LVCMOS33;
+NET "ax[1]" IOSTANDARD = LVCMOS33;
+NET "ay[2]" IOSTANDARD = LVCMOS33;
+NET "ay[1]" IOSTANDARD = LVCMOS33;
+NET "Xa[4]" IOSTANDARD = LVCMOS33;
+NET "Xa[3]" IOSTANDARD = LVCMOS33;
+NET "Xa[2]" IOSTANDARD = LVCMOS33;
+NET "Xa[1]" IOSTANDARD = LVCMOS33;
+NET "Ye[4]" IOSTANDARD = LVCMOS33;
+NET "Ye[3]" IOSTANDARD = LVCMOS33;
+NET "Ye[2]" IOSTANDARD = LVCMOS33;
+NET "Ye[1]" IOSTANDARD = LVCMOS33;
