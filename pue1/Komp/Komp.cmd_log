@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/Komp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Komp.ucf -p xc7a100t-csg324-1 Komp.ngc Komp.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Komp_map.ncd Komp.ngd Komp.pcf 
+par -w -intstyle ise -ol high -mt off Komp_map.ncd Komp.ncd Komp.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Komp.twx Komp.ncd -o Komp.twr Komp.pcf -ucf Komp.ucf 
+bitgen -intstyle ise -f Komp.ut Komp.ncd 
+bitgen -intstyle ise -f Komp.ut Komp.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Komp.ucf -p xc7a100t-csg324-1 Komp.ngc Komp.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Komp_map.ncd Komp.ngd Komp.pcf 
+par -w -intstyle ise -ol high -mt off Komp_map.ncd Komp.ncd Komp.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Komp.twx Komp.ncd -o Komp.twr Komp.pcf -ucf Komp.ucf 
+bitgen -intstyle ise -f Komp.ut Komp.ncd 
