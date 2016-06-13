@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-05-18T17:47:12</DateModified>
+  <DateModified>2016-06-12T19:55:03</DateModified>
   <ModuleName>mux2to1</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/media/sf_ise/Hasardsimulation/iseconfig/mux2to1.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/media/sf_ise/Hasardsimulation</ImplementationReportsDirectory>
+  <SavedFilePath>/home/scandic/Documents/hpi-vhdl-2016/pue1/Hasardsimulation/iseconfig/mux2to1.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/scandic/Documents/hpi-vhdl-2016/pue1/Hasardsimulation/</ImplementationReportsDirectory>
   <DateInitialized>2016-05-18T17:47:11</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
