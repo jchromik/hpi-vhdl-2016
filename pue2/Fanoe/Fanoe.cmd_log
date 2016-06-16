@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Fanoe/Fanoe.xst" -ofn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Fanoe/Fanoe.syr" 
+xst -intstyle ise -ifn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Fanoe/Fanoe.xst" -ofn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Fanoe/Fanoe.syr" 
+xst -intstyle ise -ifn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Fanoe/Fanoe.xst" -ofn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Fanoe/Fanoe.syr" 
+xst -intstyle ise -ifn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Fanoe/Fanoe.xst" -ofn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Fanoe/Fanoe.syr" 
