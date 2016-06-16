@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Jun 16 16:30:23 2016
+# Process ID: 5117
+# Log file: /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Moebius/planAhead_run_2/planAhead.log
+# Journal file: /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Moebius/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Moebius/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS18 [get_ports [list {P[3]} {P[2]} {P[1]} {P[0]}]]
+set_property package_pin "" [get_ports [list  {Q[3]}]]
+set_property package_pin "" [get_ports [list  {P[3]}]]
+startgroup
+set_property package_pin J15 [get_ports {P[0]}]
+endgroup
+startgroup
+set_property package_pin L16 [get_ports {P[1]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {P[2]}]
+endgroup
+startgroup
+set_property package_pin R15 [get_ports {P[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {Q[3]}]]
+startgroup
+set_property package_pin H17 [get_ports {Q[0]}]
+endgroup
+startgroup
+set_property package_pin K15 [get_ports {Q[1]}]
+endgroup
+startgroup
+set_property package_pin J13 [get_ports {Q[2]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {Q[3]}]
+endgroup
+startgroup
+set_property package_pin U11 [get_ports {S[1]}]
+endgroup
+startgroup
+set_property package_pin V10 [get_ports {S[2]}]
+endgroup
+startgroup
+set_property package_pin R17 [get_ports e_l]
+endgroup
+startgroup
+set_property package_pin T13 [get_ports e_r]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports c_V]
+endgroup
+startgroup
+set_property package_pin N17 [get_ports c_R]
+endgroup
+startgroup
+set_property package_pin M17 [get_ports RESET]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list c_R]]
+set_property iostandard LVCMOS33 [get_ports [list c_V]]
+set_property iostandard LVCMOS33 [get_ports [list e_l]]
+set_property iostandard LVCMOS33 [get_ports [list e_r]]
+set_property iostandard LVCMOS33 [get_ports [list RESET]]
+set_property iostandard LVCMOS33 [get_ports [list {Q[3]} {Q[2]} {Q[1]} {Q[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {P[3]} {P[2]} {P[1]} {P[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {S[2]} {S[1]}]]
+save_constraints

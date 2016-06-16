@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=/home/scandic/VHDL/MUX-Verb/pUe11.ncd
-OUTFILE=/home/scandic/VHDL/MUX-Verb/pUe11.bit
+INFILE=/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/MUX-Verb/pUe11.ncd
+OUTFILE=/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/MUX-Verb/pUe11.bit
 FAMILY=Artix7
 PART=xc7a100t-1csg324
-WORKINGDIR=/home/scandic/VHDL/MUX-Verb
+WORKINGDIR=/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/MUX-Verb
 LICENSE=WebPack
-USER_INFO=211190766_0_0_336
+USER_INFO=211191217_0_0_434

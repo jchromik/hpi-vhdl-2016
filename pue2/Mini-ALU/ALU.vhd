@@ -34,29 +34,25 @@ entity ALU is
     Port ( OP_A : in  STD_LOGIC_VECTOR (3 downto 1);
            OP_B : in  STD_LOGIC_VECTOR (3 downto 1);
            O : in  STD_LOGIC_VECTOR (2 downto 1);
-           Cein : in  STD_LOGIC;
            R : out  STD_LOGIC_VECTOR (4 downto 1));
 end ALU;
 
 architecture Behavioral of ALU is
-signal Sum, Zw : STD_LOGIC_VECTOR(3 downto 1);
-signal Caus, yu, yw : STD_LOGIC;
+signal Zw  : STD_LOGIC_VECTOR(3 downto 1);
+signal Sum : STD_LOGIC_VECTOR(4 downto 1);
+signal yu, yw : STD_LOGIC;
 begin
-	operate: process(OP_A,OP_B,O,Cein)
+	operate: process(OP_A,OP_B,O)
 	begin
-		Caus <= '0';
-		Sum <= OP_A + OP_B;
-		Zw <= (not OP_A) + "001"; -- TODO: Das ist nicht wie in Ü1A3, ist das schlimm?
+		Sum <= ('0' & OP_A) + ('0' & OP_B);
+		Zw <= (not OP_A) + "001";
 		if OP_A = OP_B then yu <= '1'; else yu <= '0'; end if;
 		if OP_A > OP_B then yw <= '1'; else yw <= '0'; end if;
-		if Cein = '1' then
-			Caus <= '1';
-			case O is
-				when "00" => R <= (Caus & Sum);
-				when "01" => R <= ('0' & Zw);
-				when others => R <= ("00" & yu & yw);
-			end case;
-		end if;
+		case O is
+			when "00" => R <= Sum;
+			when "01" => R <= ('0' & Zw);
+			when others => R <= ("00" & yu & yw);
+		end case;
 	end process operate;
 end Behavioral;
 

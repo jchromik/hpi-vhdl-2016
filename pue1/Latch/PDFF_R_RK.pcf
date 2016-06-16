@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue May 31 14:10:03 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "y" LOCATE = SITE "V11" LEVEL 1;
+COMP "ny" LOCATE = SITE "V12" LEVEL 1;
+COMP "D" LOCATE = SITE "U11" LEVEL 1;
+COMP "R" LOCATE = SITE "N17" LEVEL 1;
+COMP "c" LOCATE = SITE "V10" LEVEL 1;
+SCHEMATIC END;
+

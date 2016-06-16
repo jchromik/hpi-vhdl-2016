@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Jun 16 16:49:17 2016
+# Process ID: 6543
+# Log file: /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Mini-ALU/planAhead_run_2/planAhead.log
+# Journal file: /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Mini-ALU/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Mini-ALU/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin U11 [get_ports {O[1]}]
+endgroup
+startgroup
+set_property package_pin V10 [get_ports {O[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {OP_A[1]}]]
+startgroup
+set_property package_pin H17 [get_ports {R[1]}]
+endgroup
+startgroup
+set_property package_pin K15 [get_ports {R[2]}]
+endgroup
+startgroup
+set_property package_pin J13 [get_ports {R[3]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {R[4]}]
+endgroup
+startgroup
+set_property package_pin J15 [get_ports {OP_B[1]}]
+endgroup
+startgroup
+set_property package_pin L16 [get_ports {OP_B[2]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {OP_B[3]}]
+endgroup
+startgroup
+set_property package_pin R15 [get_ports {OP_A[1]}]
+endgroup
+startgroup
+set_property package_pin R17 [get_ports {OP_A[2]}]
+endgroup
+startgroup
+set_property package_pin T18 [get_ports {OP_A[3]}]
+endgroup
+startgroup
+set_property package_pin P18 [get_ports Cein]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {O[2]} {O[1]}]]
+set_property iostandard LVCMOS33 [get_ports [list {OP_A[3]} {OP_A[2]} {OP_A[1]}]]
+set_property iostandard LVCMOS33 [get_ports [list {OP_B[3]} {OP_B[2]} {OP_B[1]}]]
+set_property iostandard LVCMOS33 [get_ports [list {R[4]} {R[3]} {R[2]} {R[1]}]]
+set_property iostandard LVCMOS33 [get_ports [list Cein]]
+save_constraints

@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Latch/PDFF_R_RK.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Latch/PDFF_R_RK.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Latch/PDFF_R_RK.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Latch/PDFF_R_RK.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Latch/PDFF_R_RK.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Latch/PDFF_R_RK.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PDFF_R_RK.ucf -p xc7a100t-csg324-1 PDFF_R_RK.ngc PDFF_R_RK.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PDFF_R_RK_map.ncd PDFF_R_RK.ngd PDFF_R_RK.pcf 
+par -w -intstyle ise -ol high -mt off PDFF_R_RK_map.ncd PDFF_R_RK.ncd PDFF_R_RK.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml PDFF_R_RK.twx PDFF_R_RK.ncd -o PDFF_R_RK.twr PDFF_R_RK.pcf -ucf PDFF_R_RK.ucf 
+bitgen -intstyle ise -f PDFF_R_RK.ut PDFF_R_RK.ncd 

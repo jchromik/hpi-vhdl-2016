@@ -3,3 +3,15 @@ xst -intstyle ise -ifn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Moebius/S_Reg
 xst -intstyle ise -ifn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Moebius/S_Reg.xst" -ofn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Moebius/S_Reg.syr" 
 xst -intstyle ise -ifn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Moebius/S_Reg.xst" -ofn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Moebius/S_Reg.syr" 
 xst -intstyle ise -ifn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Moebius/S_Reg.xst" -ofn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Moebius/S_Reg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc S_Reg.ucf -p xc7a100t-csg324-1 S_Reg.ngc S_Reg.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o S_Reg_map.ncd S_Reg.ngd S_Reg.pcf 
+par -w -intstyle ise -ol high -mt off S_Reg_map.ncd S_Reg.ncd S_Reg.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml S_Reg.twx S_Reg.ncd -o S_Reg.twr S_Reg.pcf -ucf S_Reg.ucf 
+bitgen -intstyle ise -f S_Reg.ut S_Reg.ncd 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Moebius/S_Reg.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Moebius/S_Reg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc S_Reg.ucf -p xc7a100t-csg324-1 S_Reg.ngc S_Reg.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc S_Reg.ucf -p xc7a100t-csg324-1 S_Reg.ngc S_Reg.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o S_Reg_map.ncd S_Reg.ngd S_Reg.pcf 
+par -w -intstyle ise -ol high -mt off S_Reg_map.ncd S_Reg.ncd S_Reg.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml S_Reg.twx S_Reg.ncd -o S_Reg.twr S_Reg.pcf -ucf S_Reg.ucf 
+bitgen -intstyle ise -f S_Reg.ut S_Reg.ncd 

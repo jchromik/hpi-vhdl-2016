@@ -1,0 +1,26 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "c_R" LOC = N17;
+NET "c_V" LOC = P17;
+NET "Reset" LOC = M17;
+NET "x" LOC = J15;
+NET "y1_mo" LOC = J13;
+NET "y2_mo" LOC = K15;
+NET "g_mo" LOC = H17;
+NET "y1_me" LOC = V17;
+NET "y2_me" LOC = R18;
+NET "g_me" LOC = N14;
+
+# PlanAhead Generated IO constraints 
+
+NET "c_V" IOSTANDARD = LVCMOS33;
+NET "g_me" IOSTANDARD = LVCMOS33;
+NET "g_mo" IOSTANDARD = LVCMOS33;
+NET "Reset" IOSTANDARD = LVCMOS33;
+NET "x" IOSTANDARD = LVCMOS33;
+NET "y1_me" IOSTANDARD = LVCMOS33;
+NET "y1_mo" IOSTANDARD = LVCMOS33;
+NET "y2_me" IOSTANDARD = LVCMOS33;
+NET "y2_mo" IOSTANDARD = LVCMOS33;
+NET "c_R" IOSTANDARD = LVCMOS33;

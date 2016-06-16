@@ -172,7 +172,7 @@
       <outfile xil_pn:name="pUe11_pad.txt"/>
       <outfile xil_pn:name="pUe11_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1463646695" xil_pn:in_ck="161272748681551" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="4698606601606507448" xil_pn:start_ts="1463646642">
+    <transform xil_pn:end_ts="1464188427" xil_pn:in_ck="161272748681551" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="4698606601606507448" xil_pn:start_ts="1464188387">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -188,6 +188,8 @@
     <transform xil_pn:end_ts="1463646705" xil_pn:in_ck="161272748668697" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="4674625285961985627" xil_pn:start_ts="1463646705">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1463646369" xil_pn:in_ck="5267028792999434567" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1463646352">
       <status xil_pn:value="SuccessfullyRun"/>

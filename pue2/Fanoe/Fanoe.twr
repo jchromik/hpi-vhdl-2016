@@ -1,0 +1,107 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 1 -n
+3 -fastpaths -xml Fanoe.twx Fanoe.ncd -o Fanoe.twr Fanoe.pcf -ucf Fanoe.ucf
+
+Design file:              Fanoe.ncd
+Physical constraint file: Fanoe.pcf
+Device,package,speed:     xc7a100t,csg324,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock c_R
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+Reset       |    0.415(F)|      SLOW  |    0.763(F)|      SLOW  |n0003             |   0.000|
+x           |    0.093(F)|      FAST  |    1.103(F)|      SLOW  |n0003             |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock c_V
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+Reset       |    0.158(F)|      FAST  |    1.197(F)|      SLOW  |n0003             |   0.000|
+x           |   -0.106(F)|      FAST  |    1.537(F)|      SLOW  |n0003             |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock c_R to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+g_me        |        10.464(F)|      SLOW  |         3.032(F)|      FAST  |n0003             |   0.000|
+g_mo        |        10.953(F)|      SLOW  |         3.257(F)|      FAST  |n0003             |   0.000|
+y1_me       |        10.918(F)|      SLOW  |         3.274(F)|      FAST  |n0003             |   0.000|
+y1_mo       |        11.342(F)|      SLOW  |         3.469(F)|      FAST  |n0003             |   0.000|
+y2_me       |         9.327(F)|      SLOW  |         2.795(F)|      FAST  |n0003             |   0.000|
+y2_mo       |        11.014(F)|      SLOW  |         3.319(F)|      FAST  |n0003             |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock c_V to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+g_me        |        10.898(F)|      SLOW  |         3.231(F)|      FAST  |n0003             |   0.000|
+g_mo        |        11.387(F)|      SLOW  |         3.456(F)|      FAST  |n0003             |   0.000|
+y1_me       |        11.352(F)|      SLOW  |         3.473(F)|      FAST  |n0003             |   0.000|
+y1_mo       |        11.776(F)|      SLOW  |         3.668(F)|      FAST  |n0003             |   0.000|
+y2_me       |         9.761(F)|      SLOW  |         2.994(F)|      FAST  |n0003             |   0.000|
+y2_mo       |        11.448(F)|      SLOW  |         3.518(F)|      FAST  |n0003             |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock c_R
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+c_R            |         |         |         |    1.284|
+c_V            |         |         |         |    1.284|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock c_V
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+c_R            |         |         |         |    1.284|
+c_V            |         |         |         |    1.284|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu Jun 16 16:21:22 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 766 MB
+
+
+

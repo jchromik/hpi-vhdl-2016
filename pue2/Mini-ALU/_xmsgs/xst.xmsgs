@@ -5,25 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/scandic/Documents/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" Line 55: <arg fmt="%s" index="1">caus</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="new" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" Line 52: <arg fmt="%s" index="1">sum</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/scandic/Documents/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" Line 56: <arg fmt="%s" index="1">zw</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" Line 53: <arg fmt="%s" index="1">zw</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/scandic/Documents/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" Line 57: <arg fmt="%s" index="1">yu</arg> should be on the sensitivity list of the process
-</msg>
-
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">R&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-</msg>
-
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">R&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-</msg>
-
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">R&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-</msg>
-
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">R&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" Line 54: <arg fmt="%s" index="1">yu</arg> should be on the sensitivity list of the process
 </msg>
 
 </messages>

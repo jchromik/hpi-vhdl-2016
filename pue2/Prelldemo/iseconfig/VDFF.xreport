@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-06-13T13:34:40</DateModified>
+  <DateModified>2016-06-16T17:52:01</DateModified>
   <ModuleName>VDFF</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/scandic/Documents/hpi-vhdl-2016/pue2/Prelldemo/iseconfig/VDFF.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/scandic/Documents/hpi-vhdl-2016/pue2/Prelldemo</ImplementationReportsDirectory>
+  <SavedFilePath>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/iseconfig/VDFF.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/</ImplementationReportsDirectory>
   <DateInitialized>2016-06-13T13:34:39</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

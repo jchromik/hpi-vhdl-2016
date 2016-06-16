@@ -1,3 +1,5 @@
 xst -intstyle ise -ifn "/media/sf_ise/Hasardsimulation/mux2to1.xst" -ofn "/media/sf_ise/Hasardsimulation/mux2to1.syr" 
 xst -intstyle ise -ifn "/media/sf_ise/Hasardsimulation/mux2to1.xst" -ofn "/media/sf_ise/Hasardsimulation/mux2to1.syr" 
 xst -intstyle ise -ifn "/media/sf_ise/Hasardsimulation/mux2to1.xst" -ofn "/media/sf_ise/Hasardsimulation/mux2to1.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Hasardsimulation/mux2to1.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Hasardsimulation/mux2to1.syr" 
+netgen -intstyle ise -ar Structure -tm mux2to1 -w -dir netgen/synthesis -ofmt vhdl -sim mux2to1.ngc mux2to1_synthesis.vhd 

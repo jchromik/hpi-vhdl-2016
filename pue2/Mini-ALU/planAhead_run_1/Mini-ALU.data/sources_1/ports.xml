@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="OP_A">
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+		</Bus>
+		<Bus Id="OP_B">
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+		</Bus>
+		<Bus Id="O">
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+		</Bus>
+		<Bus Id="R">
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+		</Bus>
+		<Port Id="Cein" Dir="IN"/>
+	</Ifc>
+</Interface>
+

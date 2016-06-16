@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jun 16 16:20:50 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "y2_me" LOCATE = SITE "R18" LEVEL 1;
+COMP "y1_mo" LOCATE = SITE "J13" LEVEL 1;
+COMP "g_me" LOCATE = SITE "N14" LEVEL 1;
+COMP "y2_mo" LOCATE = SITE "K15" LEVEL 1;
+COMP "g_mo" LOCATE = SITE "H17" LEVEL 1;
+COMP "x" LOCATE = SITE "J15" LEVEL 1;
+COMP "c_R" LOCATE = SITE "N17" LEVEL 1;
+COMP "c_V" LOCATE = SITE "P17" LEVEL 1;
+COMP "Reset" LOCATE = SITE "M17" LEVEL 1;
+COMP "y1_me" LOCATE = SITE "V17" LEVEL 1;
+SCHEMATIC END;
+

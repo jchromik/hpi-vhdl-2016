@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue May 31 14:10:46 2016
+
+drc -z PDFF_R_RK.ncd PDFF_R_RK.pcf
+
+DRC detected 0 errors and 0 warnings.

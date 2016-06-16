@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-05-19T10:17:58</DateModified>
+  <DateModified>2016-05-25T16:59:17</DateModified>
   <ModuleName>pUe11</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/scandic/VHDL/MUX-Verb/iseconfig/pUe11.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/scandic/VHDL/MUX-Verb</ImplementationReportsDirectory>
+  <SavedFilePath>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/MUX-Verb/iseconfig/pUe11.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/MUX-Verb/</ImplementationReportsDirectory>
   <DateInitialized>2016-05-19T09:56:19</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

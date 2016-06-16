@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-05-19T11:14:12</DateModified>
+  <DateModified>2016-06-07T14:04:21</DateModified>
   <ModuleName>Komp</ModuleName>
   <SummaryTimeStamp>2016-05-19T11:11:38</SummaryTimeStamp>
   <SavedFilePath>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/iseconfig/Komp.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Komp/</ImplementationReportsDirectory>
   <DateInitialized>2016-05-19T10:48:07</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

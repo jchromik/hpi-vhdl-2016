@@ -33,24 +33,23 @@ entity S_Reg is
     Port ( c_V, c_R : STD_LOGIC; -- Taktflanken
            RESET : in  STD_LOGIC; -- asynchrones Reset
            S : in  STD_LOGIC_VECTOR (2 downto 1); -- Steuersignal(e)
-           P : in  STD_LOGIC_VECTOR (3 downto 0); -- 4 Bits für Ladeoperation
+           P : in  STD_LOGIC_VECTOR (3 downto 0); -- 4 Bits fr Ladeoperation
            e_l : in  STD_LOGIC; -- einzuschiebendes Bit bei rechts schieben
-           e_r : in  STD_LOGIC; -- einzuschiebendes Bit bei links schieben
            Q : buffer  STD_LOGIC_VECTOR (3 downto 0)); -- Zustand
 end S_Reg;
 
 architecture Behavioral of S_Reg is
 signal D: STD_LOGIC_VECTOR(3 downto 0); -- Ausgang MUX, Eingang D-Register
-signal c, Q_int, nQ_int: STD_LOGIC; -- für Taktentprellung
+signal c, Q_int, nQ_int: STD_LOGIC; -- fr Taktentprellung
 begin
 
 	-- MUX: implementiert Steuerlogik
-	mux: process(S,P,Q,e_l,e_r)
+	mux: process(S,P,Q,e_l)
 	begin
 		case S is
 			when "00" => D <= Q; -- halten
-			when "01" => D <= Q(2 downto 0) & (not Q(3)); -- Möbius schieben, anstelle von links schieben
-			when "10" => D <= e_l & Q(3 downto 1); -- rechts schieben
+			when "01" => D <= e_l & Q(3 downto 1); -- rechts schieben
+			when "10" => D <= Q(2 downto 0) & (not Q(3)); -- Mbius schieben, anstelle von links schieben
 			when others => D <= P; -- laden
 		end case;
 	end process mux;

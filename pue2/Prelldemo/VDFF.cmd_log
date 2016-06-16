@@ -1,1 +1,73 @@
 xst -intstyle ise -ifn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/home/scandic/Documents/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VDFF.ucf -p xc7a100t-csg324-1 VDFF.ngc VDFF.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o VDFF_map.ncd VDFF.ngd VDFF.pcf 
+par -w -intstyle ise -ol high -mt off VDFF_map.ncd VDFF.ncd VDFF.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml VDFF.twx VDFF.ncd -o VDFF.twr VDFF.pcf -ucf VDFF.ucf 
+bitgen -intstyle ise -f VDFF.ut VDFF.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VDFF.ucf -p xc7a100t-csg324-1 VDFF.ngc VDFF.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o VDFF_map.ncd VDFF.ngd VDFF.pcf 
+par -w -intstyle ise -ol high -mt off VDFF_map.ncd VDFF.ncd VDFF.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml VDFF.twx VDFF.ncd -o VDFF.twr VDFF.pcf -ucf VDFF.ucf 
+bitgen -intstyle ise -f VDFF.ut VDFF.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VDFF.ucf -p xc7a100t-csg324-1 VDFF.ngc VDFF.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o VDFF_map.ncd VDFF.ngd VDFF.pcf 
+par -w -intstyle ise -ol high -mt off VDFF_map.ncd VDFF.ncd VDFF.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml VDFF.twx VDFF.ncd -o VDFF.twr VDFF.pcf -ucf VDFF.ucf 
+bitgen -intstyle ise -f VDFF.ut VDFF.ncd 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VDFF.ucf -p xc7a100t-csg324-1 VDFF.ngc VDFF.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o VDFF_map.ncd VDFF.ngd VDFF.pcf 
+par -w -intstyle ise -ol high -mt off VDFF_map.ncd VDFF.ncd VDFF.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml VDFF.twx VDFF.ncd -o VDFF.twr VDFF.pcf -ucf VDFF.ucf 
+bitgen -intstyle ise -f VDFF.ut VDFF.ncd 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VDFF.ucf -p xc7a100t-csg324-1 VDFF.ngc VDFF.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o VDFF_map.ncd VDFF.ngd VDFF.pcf 
+par -w -intstyle ise -ol high -mt off VDFF_map.ncd VDFF.ncd VDFF.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml VDFF.twx VDFF.ncd -o VDFF.twr VDFF.pcf -ucf VDFF.ucf 
+bitgen -intstyle ise -f VDFF.ut VDFF.ncd 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VDFF.ucf -p xc7a100t-csg324-1 VDFF.ngc VDFF.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o VDFF_map.ncd VDFF.ngd VDFF.pcf 
+par -w -intstyle ise -ol high -mt off VDFF_map.ncd VDFF.ncd VDFF.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml VDFF.twx VDFF.ncd -o VDFF.twr VDFF.pcf -ucf VDFF.ucf 
+bitgen -intstyle ise -f VDFF.ut VDFF.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VDFF.ucf -p xc7a100t-csg324-1 VDFF.ngc VDFF.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o VDFF_map.ncd VDFF.ngd VDFF.pcf 
+par -w -intstyle ise -ol high -mt off VDFF_map.ncd VDFF.ncd VDFF.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml VDFF.twx VDFF.ncd -o VDFF.twr VDFF.pcf -ucf VDFF.ucf 
+bitgen -intstyle ise -f VDFF.ut VDFF.ncd 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VDFF.ucf -p xc7a100t-csg324-1 VDFF.ngc VDFF.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o VDFF_map.ncd VDFF.ngd VDFF.pcf 
+par -w -intstyle ise -ol high -mt off VDFF_map.ncd VDFF.ncd VDFF.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml VDFF.twx VDFF.ncd -o VDFF.twr VDFF.pcf -ucf VDFF.ucf 
+bitgen -intstyle ise -f VDFF.ut VDFF.ncd 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VDFF.ucf -p xc7a100t-csg324-1 VDFF.ngc VDFF.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o VDFF_map.ncd VDFF.ngd VDFF.pcf 
+par -w -intstyle ise -ol high -mt off VDFF_map.ncd VDFF.ncd VDFF.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml VDFF.twx VDFF.ncd -o VDFF.twr VDFF.pcf -ucf VDFF.ucf 
+bitgen -intstyle ise -f VDFF.ut VDFF.ncd 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VDFF.ucf -p xc7a100t-csg324-1 VDFF.ngc VDFF.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o VDFF_map.ncd VDFF.ngd VDFF.pcf 
+par -w -intstyle ise -ol high -mt off VDFF_map.ncd VDFF.ncd VDFF.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml VDFF.twx VDFF.ncd -o VDFF.twr VDFF.pcf -ucf VDFF.ucf 
+bitgen -intstyle ise -f VDFF.ut VDFF.ncd 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+xst -intstyle ise -ifn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.xst" -ofn "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VDFF.ucf -p xc7a100t-csg324-1 VDFF.ngc VDFF.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o VDFF_map.ncd VDFF.ngd VDFF.pcf 
+par -w -intstyle ise -ol high -mt off VDFF_map.ncd VDFF.ncd VDFF.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml VDFF.twx VDFF.ncd -o VDFF.twr VDFF.pcf -ucf VDFF.ucf 
+bitgen -intstyle ise -f VDFF.ut VDFF.ncd 

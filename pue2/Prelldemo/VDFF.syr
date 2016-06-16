@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: VDFF.prj
@@ -108,7 +108,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/scandic/Documents/hpi-vhdl-2016/pue2/Prelldemo/VDFF.vhd" into library work
+Parsing VHDL file "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.vhd" into library work
 Parsing entity <VDFF>.
 Parsing architecture <Automat> of entity <vdff>.
 
@@ -117,30 +117,25 @@ Parsing architecture <Automat> of entity <vdff>.
 =========================================================================
 
 Elaborating entity <VDFF> (architecture <Automat>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/scandic/Documents/hpi-vhdl-2016/pue2/Prelldemo/VDFF.vhd" Line 73: r should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.vhd" Line 45: r should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <VDFF>.
-    Related source file is "/home/scandic/Documents/hpi-vhdl-2016/pue2/Prelldemo/VDFF.vhd".
-    Found 4x2-bit Read Only RAM for signal <Y>
-    Found 1-bit 4-to-1 multiplexer for signal <Z_folge[1]> created at line 38.
+    Related source file is "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/VDFF.vhd".
+    Found 1-bit register for signal <Z>.
     Summary:
-	inferred   1 RAM(s).
-	inferred   5 Multiplexer(s).
+	inferred   1 D-type flip-flop(s).
 Unit <VDFF> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
- 4x2-bit single-port Read Only RAM                     : 1
-# Multiplexers                                         : 5
- 1-bit 2-to-1 multiplexer                              : 4
- 1-bit 4-to-1 multiplexer                              : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
 
 =========================================================================
 
@@ -149,36 +144,18 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <VDFF>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Y> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 4-word x 2-bit                      |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <Z>             |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <nQ>            |          |
-    -----------------------------------------------------------------------
-Unit <VDFF> synthesized (advanced).
-
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
- 4x2-bit single-port distributed Read Only RAM         : 1
-# Multiplexers                                         : 5
- 1-bit 2-to-1 multiplexer                              : 4
- 1-bit 4-to-1 multiplexer                              : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2170 - Unit VDFF : the following signal(s) form a combinatorial loop: Z<0>, Q, Z_folge[1], Z_folge[0]1.
 
 Optimizing unit <VDFF> ...
 
@@ -191,7 +168,10 @@ Final Macro Processing ...
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
 =========================================================================
 
 =========================================================================
@@ -213,10 +193,14 @@ Top Level Output File Name         : VDFF.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3
-#      LUT2                        : 3
-# IO Buffers                       : 6
-#      IBUF                        : 3
+# BELS                             : 1
+#      INV                         : 1
+# FlipFlops/Latches                : 1
+#      FDC                         : 1
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 5
+#      IBUF                        : 2
 #      OBUF                        : 3
 
 Device utilization summary:
@@ -226,21 +210,23 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                    3  out of  63400     0%  
-    Number used as Logic:                 3  out of  63400     0%  
+ Number of Slice Registers:               1  out of  126800     0%  
+ Number of Slice LUTs:                    1  out of  63400     0%  
+    Number used as Logic:                 1  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      3
-   Number with an unused Flip Flop:       3  out of      3   100%  
-   Number with an unused LUT:             0  out of      3     0%  
-   Number of fully used LUT-FF pairs:     0  out of      3     0%  
-   Number of unique control sets:         0
+ Number of LUT Flip Flop pairs used:      2
+   Number with an unused Flip Flop:       1  out of      2    50%  
+   Number with an unused LUT:             1  out of      2    50%  
+   Number of fully used LUT-FF pairs:     0  out of      2     0%  
+   Number of unique control sets:         1
 
 IO Utilization: 
- Number of IOs:                           6
- Number of bonded IOBs:                   6  out of    210     2%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    210     2%  
 
 Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
 
 ---------------------------
 Partition Resource Summary:
@@ -260,7 +246,11 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+c                                  | IBUF+BUFG              | 1     |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -270,52 +260,119 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: 1.625ns
+   Minimum period: 1.464ns (Maximum Frequency: 683.060MHz)
+   Minimum input arrival time before clock: 0.894ns
+   Maximum output required time after clock: 1.434ns
+   Maximum combinational path delay: 0.400ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 5 / 3
+Timing constraint: Default period analysis for Clock 'c'
+  Clock period: 1.464ns (frequency: 683.060MHz)
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               1.625ns (Levels of Logic = 4)
-  Source:            R (PAD)
-  Destination:       nQ (PAD)
+Delay:               1.464ns (Levels of Logic = 1)
+  Source:            Z (FF)
+  Destination:       Z (FF)
+  Source Clock:      c rising
+  Destination Clock: c rising
 
-  Data Path: R to nQ
+  Data Path: Z to Z
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   0.001   0.542  R_IBUF (R_IBUF)
-     LUT2:I0->O            3   0.124   0.435  Mmux_Z<0>11 (Q_OBUF)
-     LUT2:I1->O            1   0.124   0.399  Mram_Y11 (nQ_OBUF)
+     FDC:C->Q              2   0.478   0.405  Z (Z)
+     INV:I->O              2   0.146   0.405  nQ1_INV_0 (nQ_OBUF)
+     FDC:D                     0.030          Z
+    ----------------------------------------
+    Total                      1.464ns (0.654ns logic, 0.810ns route)
+                                       (44.7% logic, 55.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'c'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.894ns (Levels of Logic = 1)
+  Source:            R (PAD)
+  Destination:       Z (FF)
+  Destination Clock: c rising
+
+  Data Path: R to Z
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.399  R_IBUF (R_IBUF)
+     FDC:CLR                   0.494          Z
+    ----------------------------------------
+    Total                      0.894ns (0.495ns logic, 0.399ns route)
+                                       (55.4% logic, 44.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.434ns (Levels of Logic = 2)
+  Source:            Z (FF)
+  Destination:       nQ (PAD)
+  Source Clock:      c rising
+
+  Data Path: Z to nQ
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.478   0.405  Z (Z)
+     INV:I->O              2   0.146   0.405  nQ1_INV_0 (nQ_OBUF)
      OBUF:I->O                 0.000          nQ_OBUF (nQ)
     ----------------------------------------
-    Total                      1.625ns (0.249ns logic, 1.376ns route)
-                                       (15.3% logic, 84.7% route)
+    Total                      1.434ns (0.624ns logic, 0.810ns route)
+                                       (43.5% logic, 56.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.400ns (Levels of Logic = 2)
+  Source:            c (PAD)
+  Destination:       dummy (PAD)
+
+  Data Path: c to dummy
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.399  c_IBUF (dummy_OBUF)
+     OBUF:I->O                 0.000          dummy_OBUF (dummy)
+    ----------------------------------------
+    Total                      0.400ns (0.001ns logic, 0.399ns route)
+                                       (0.2% logic, 99.8% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock c
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+c              |    1.464|         |         |         |
+---------------+---------+---------+---------+---------+
+
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.25 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.00 secs
  
 --> 
 
 
-Total memory usage is 502484 kilobytes
+Total memory usage is 503772 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 

@@ -1,0 +1,34 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "c" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "c" LOC = V10;
+NET "D" LOC = U11;
+
+# PlanAhead Generated IO constraints 
+
+NET "D" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "ny" LOC = V12;
+
+# PlanAhead Generated IO constraints 
+
+NET "ny" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "y" LOC = V11;
+
+# PlanAhead Generated IO constraints 
+
+NET "y" IOSTANDARD = LVCMOS33;
+NET "R" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "R" LOC = N17;

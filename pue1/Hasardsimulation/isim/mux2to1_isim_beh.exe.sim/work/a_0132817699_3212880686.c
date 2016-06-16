@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/media/sf_ise/Hasardsimulation/mux2to1.vhd";
+static const char *ng0 = "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Hasardsimulation/mux2to1.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_3488546069778340532_503743352(char *, unsigned char , unsigned char );

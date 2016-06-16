@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-06-16T15:21:23</DateModified>
+  <DateModified>2016-06-16T16:16:30</DateModified>
   <ModuleName>Fanoe</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/scandic/Documents/hpi-vhdl-2016/pue2/Fanoe/iseconfig/Fanoe.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/scandic/Documents/hpi-vhdl-2016/pue2/Fanoe</ImplementationReportsDirectory>
+  <SavedFilePath>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Fanoe/iseconfig/Fanoe.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Fanoe/</ImplementationReportsDirectory>
   <DateInitialized>2016-06-16T15:21:22</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

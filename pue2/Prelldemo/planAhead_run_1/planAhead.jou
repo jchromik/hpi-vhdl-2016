@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Jun 16 17:05:46 2016
+# Process ID: 7167
+# Log file: /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/planAhead_run_1/planAhead.log
+# Journal file: /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Prelldemo/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P17 [get_ports c]
+endgroup
+startgroup
+set_property package_pin J15 [get_ports dummy]
+endgroup
+startgroup
+set_property package_pin V11 [get_ports nQ]
+endgroup
+startgroup
+set_property package_pin V10 [get_ports Q]
+endgroup
+startgroup
+set_property package_pin M17 [get_ports R]
+endgroup
+save_constraints

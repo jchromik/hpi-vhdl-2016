@@ -1,0 +1,15 @@
+
+
+NET "c" LOC = P17;
+NET "dummy" LOC = H17;
+NET "nQ" LOC = V12;
+NET "Q" LOC = V11;
+NET "R" LOC = M17;
+
+# PlanAhead Generated IO constraints 
+
+NET "c" IOSTANDARD = LVCMOS33;
+NET "dummy" IOSTANDARD = LVCMOS33;
+NET "nQ" IOSTANDARD = LVCMOS33;
+NET "Q" IOSTANDARD = LVCMOS33;
+NET "R" IOSTANDARD = LVCMOS33;

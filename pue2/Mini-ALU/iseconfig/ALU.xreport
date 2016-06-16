@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-06-13T12:34:20</DateModified>
+  <DateModified>2016-06-16T16:47:11</DateModified>
   <ModuleName>ALU</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/scandic/Documents/hpi-vhdl-2016/pue2/Mini-ALU/iseconfig/ALU.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/scandic/Documents/hpi-vhdl-2016/pue2/Mini-ALU/</ImplementationReportsDirectory>
+  <SavedFilePath>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Mini-ALU/iseconfig/ALU.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Mini-ALU/</ImplementationReportsDirectory>
   <DateInitialized>2016-06-12T20:33:54</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

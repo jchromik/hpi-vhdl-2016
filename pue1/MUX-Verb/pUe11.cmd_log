@@ -10,3 +10,4 @@ par -w -intstyle ise -ol high -mt off pUe11_map.ncd pUe11.ncd pUe11.pcf
 trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml pUe11.twx pUe11.ncd -o pUe11.twr pUe11.pcf -ucf pUe11.ucf 
 bitgen -intstyle ise -f pUe11.ut pUe11.ncd 
 bitgen -intstyle ise -f pUe11.ut pUe11.ncd 
+bitgen -intstyle ise -f pUe11.ut pUe11.ncd 

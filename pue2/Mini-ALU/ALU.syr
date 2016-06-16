@@ -108,7 +108,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/scandic/Documents/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" into library work
+Parsing VHDL file "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" into library work
 Parsing entity <ALU>.
 Parsing architecture <Behavioral> of entity <alu>.
 
@@ -117,32 +117,25 @@ Parsing architecture <Behavioral> of entity <alu>.
 =========================================================================
 
 Elaborating entity <ALU> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/scandic/Documents/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" Line 55: caus should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/scandic/Documents/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" Line 56: zw should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/scandic/Documents/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" Line 57: yu should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" Line 52: sum should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" Line 53: zw should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd" Line 54: yu should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <ALU>.
-    Related source file is "/home/scandic/Documents/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd".
-    Found 3-bit adder for signal <Sum> created at line 48.
-    Found 3-bit adder for signal <Zw> created at line 49.
-    Found 1-bit 3-to-1 multiplexer for signal <O[2]_GND_5_o_wide_mux_5_OUT<2>> created at line 45.
-    Found 1-bit 3-to-1 multiplexer for signal <O[2]_GND_5_o_wide_mux_5_OUT<1>> created at line 45.
-    Found 1-bit 3-to-1 multiplexer for signal <O[2]_GND_5_o_wide_mux_5_OUT<0>> created at line 45.
-WARNING:Xst:737 - Found 1-bit latch for signal <R<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <R<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <R<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <R<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 3-bit comparator equal for signal <yu> created at line 50
-    Found 3-bit comparator greater for signal <yw> created at line 51
+    Related source file is "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Mini-ALU/ALU.vhd".
+    Found 4-bit adder for signal <Sum> created at line 47.
+    Found 3-bit adder for signal <Zw> created at line 48.
+    Found 4-bit 3-to-1 multiplexer for signal <R> created at line 51.
+    Found 3-bit comparator equal for signal <yu> created at line 49
+    Found 3-bit comparator greater for signal <yw> created at line 50
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred   4 Latch(s).
 	inferred   2 Comparator(s).
-	inferred   3 Multiplexer(s).
+	inferred   1 Multiplexer(s).
 Unit <ALU> synthesized.
 
 =========================================================================
@@ -150,14 +143,13 @@ HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 2
- 3-bit adder                                           : 2
-# Latches                                              : 4
- 1-bit latch                                           : 4
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
 # Comparators                                          : 2
  3-bit comparator equal                                : 1
  3-bit comparator greater                              : 1
-# Multiplexers                                         : 3
- 1-bit 3-to-1 multiplexer                              : 3
+# Multiplexers                                         : 1
+ 4-bit 3-to-1 multiplexer                              : 1
 
 =========================================================================
 
@@ -171,12 +163,13 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 2
- 3-bit adder                                           : 2
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
 # Comparators                                          : 2
  3-bit comparator equal                                : 1
  3-bit comparator greater                              : 1
-# Multiplexers                                         : 3
- 1-bit 3-to-1 multiplexer                              : 3
+# Multiplexers                                         : 1
+ 4-bit 3-to-1 multiplexer                              : 1
 
 =========================================================================
 
@@ -217,15 +210,11 @@ Top Level Output File Name         : ALU.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 10
+# BELS                             : 11
 #      LUT2                        : 3
-#      LUT5                        : 3
-#      LUT6                        : 3
+#      LUT5                        : 2
+#      LUT6                        : 5
 #      MUXF7                       : 1
-# FlipFlops/Latches                : 4
-#      LD                          : 4
-# Clock Buffers                    : 1
-#      BUFGP                       : 1
 # IO Buffers                       : 12
 #      IBUF                        : 8
 #      OBUF                        : 4
@@ -237,23 +226,21 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                    9  out of  63400     0%  
-    Number used as Logic:                 9  out of  63400     0%  
+ Number of Slice LUTs:                   10  out of  63400     0%  
+    Number used as Logic:                10  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      9
-   Number with an unused Flip Flop:       9  out of      9   100%  
-   Number with an unused LUT:             0  out of      9     0%  
-   Number of fully used LUT-FF pairs:     0  out of      9     0%  
-   Number of unique control sets:         1
+ Number of LUT Flip Flop pairs used:     10
+   Number with an unused Flip Flop:      10  out of     10   100%  
+   Number with an unused LUT:             0  out of     10     0%  
+   Number of fully used LUT-FF pairs:     0  out of     10     0%  
+   Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                          13
- Number of bonded IOBs:                  13  out of    210     6%  
-    IOB Flip Flops/Latches:               4
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    210     5%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
 
 ---------------------------
 Partition Resource Summary:
@@ -273,11 +260,7 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-Cein                               | BUFGP                  | 4     |
------------------------------------+------------------------+-------+
+No clock signals found in this design
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -288,53 +271,33 @@ Timing Summary:
 Speed Grade: -1
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 1.989ns
-   Maximum output required time after clock: 1.024ns
-   Maximum combinational path delay: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 2.390ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Cein'
-  Total number of paths / destination ports: 36 / 4
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 43 / 4
 -------------------------------------------------------------------------
-Offset:              1.989ns (Levels of Logic = 3)
+Delay:               2.390ns (Levels of Logic = 4)
   Source:            OP_A<3> (PAD)
-  Destination:       R_1 (LATCH)
-  Destination Clock: Cein falling
+  Destination:       R<1> (PAD)
 
-  Data Path: OP_A<3> to R_1
+  Data Path: OP_A<3> to R<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   0.001   0.953  OP_A_3_IBUF (OP_A_3_IBUF)
-     LUT6:I0->O            1   0.124   0.776  Mmux_O[2]_GND_5_o_wide_mux_5_OUT<0>11 (Mmux_O[2]_GND_5_o_wide_mux_5_OUT<0>1)
-     LUT5:I1->O            1   0.124   0.000  Mmux_O[2]_GND_5_o_wide_mux_5_OUT<0>12 (O[2]_GND_5_o_wide_mux_5_OUT<0>)
-     LD:D                      0.011          R_1
+     IBUF:I->O             5   0.001   0.966  OP_A_3_IBUF (OP_A_3_IBUF)
+     LUT6:I0->O            1   0.124   0.776  Mmux_R11 (Mmux_R1)
+     LUT5:I1->O            1   0.124   0.399  Mmux_R12 (R_1_OBUF)
+     OBUF:I->O                 0.000          R_1_OBUF (R<1>)
     ----------------------------------------
-    Total                      1.989ns (0.260ns logic, 1.729ns route)
-                                       (13.1% logic, 86.9% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'Cein'
-  Total number of paths / destination ports: 4 / 4
--------------------------------------------------------------------------
-Offset:              1.024ns (Levels of Logic = 1)
-  Source:            R_4 (LATCH)
-  Destination:       R<4> (PAD)
-  Source Clock:      Cein falling
-
-  Data Path: R_4 to R<4>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.625   0.399  R_4 (R_4)
-     OBUF:I->O                 0.000          R_4_OBUF (R<4>)
-    ----------------------------------------
-    Total                      1.024ns (0.625ns logic, 0.399ns route)
-                                       (61.0% logic, 39.0% route)
+    Total                      2.390ns (0.249ns logic, 2.141ns route)
+                                       (10.4% logic, 89.6% route)
 
 =========================================================================
 
@@ -344,15 +307,15 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.21 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.86 secs
  
 --> 
 
 
-Total memory usage is 503672 kilobytes
+Total memory usage is 496824 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    7 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

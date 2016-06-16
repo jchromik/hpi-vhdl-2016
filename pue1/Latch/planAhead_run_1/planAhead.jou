@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Tue May 31 14:07:13 2016
+# Process ID: 17422
+# Log file: /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Latch/planAhead_run_1/planAhead.log
+# Journal file: /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Latch/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Latch/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS33 [get_ports [list c]]
+startgroup
+set_property package_pin V10 [get_ports c]
+endgroup
+startgroup
+set_property package_pin U11 [get_ports D]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list D]]
+startgroup
+set_property package_pin V12 [get_ports ny]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list ny]]
+startgroup
+set_property package_pin V11 [get_ports y]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list y]]
+set_property iostandard LVCMOS33 [get_ports [list R]]
+startgroup
+set_property package_pin N17 [get_ports R]
+endgroup
+save_constraints

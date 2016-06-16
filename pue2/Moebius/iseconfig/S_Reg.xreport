@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-06-12T19:59:05</DateModified>
+  <DateModified>2016-06-16T16:29:12</DateModified>
   <ModuleName>S_Reg</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/scandic/Documents/hpi-vhdl-2016/pue2/Moebius/iseconfig/S_Reg.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/scandic/Documents/hpi-vhdl-2016/pue2/Moebius</ImplementationReportsDirectory>
+  <SavedFilePath>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Moebius/iseconfig/S_Reg.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue2/Moebius/</ImplementationReportsDirectory>
   <DateInitialized>2016-06-12T19:59:05</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

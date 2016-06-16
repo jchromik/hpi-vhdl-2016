@@ -5,5 +5,17 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="811" delta="new" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Hasardsimulation/mux2to1.vhd" Line 47: Synthesis ignores all but the first waveform
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="811" delta="new" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Hasardsimulation/mux2to1.vhd" Line 48: Synthesis ignores all but the first waveform
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="811" delta="new" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Hasardsimulation/mux2to1.vhd" Line 49: Synthesis ignores all but the first waveform
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue1/Hasardsimulation/mux2to1.vhd" Line 59: Assignment to <arg fmt="%s" index="1">y</arg> ignored, since the identifier is never used
+</msg>
+
 </messages>
 
