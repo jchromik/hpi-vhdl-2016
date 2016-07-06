@@ -35,7 +35,7 @@ entity output_main is
            reset : in  STD_LOGIC;
            clk : in  STD_LOGIC;
            led_out : out  STD_LOGIC_VECTOR(7 downto 0);
-           segment_out : out  STD_LOGIC);
+           segment_out : out  STD_LOGIC_VECTOR(11 downto 0));
 end output_main;
 
 architecture Behavioral of output_main is

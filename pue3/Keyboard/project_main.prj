@@ -1,0 +1,5 @@
+vhdl work "scanner.vhd"
+vhdl work "RF_fetch.vhd"
+vhdl work "output_main.vhd"
+vhdl work "keyboard-main.vhd"
+vhdl work "project_main.vhd"
