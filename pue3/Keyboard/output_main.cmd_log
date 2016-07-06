@@ -1,0 +1,3 @@
+vhdtdtfi -lib work output_main.vhd -prj Keyboard -o output_main.spl -module output_main -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 output_main.spl /home/scandic/Documents/hpi-vhdl-2016/pue3/Keyboard/output_main.sym 
+vhdtdtfi -prj Keyboard -o /home/scandic/Documents/hpi-vhdl-2016/pue3/Keyboard/output_main.vhi -module output_main -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work output_main.vhd 

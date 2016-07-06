@@ -34,6 +34,12 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="keyboard_main_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="keyboard_main_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="keyboard_main_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="output_main.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="output_main.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="output_main.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="output_main.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="output_main.vhi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="output_main.xst"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
@@ -69,6 +75,11 @@
     <transform xil_pn:end_ts="1467808478" xil_pn:in_ck="-5742646176892279650" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-7832475078381586429" xil_pn:start_ts="1467808466">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="keyboard_main.lso"/>
       <outfile xil_pn:name="keyboard_main.ngc"/>
