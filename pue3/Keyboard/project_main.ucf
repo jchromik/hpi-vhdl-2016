@@ -44,28 +44,6 @@ NET "kbdata" LOC = B2;
 NET "reset" LOC = N17;
 
 
-
-
-NET "dbg1[7]" IOSTANDARD = LVCMOS33;
-NET "dbg1[6]" IOSTANDARD = LVCMOS33;
-NET "dbg1[5]" IOSTANDARD = LVCMOS33;
-NET "dbg1[4]" IOSTANDARD = LVCMOS33;
-NET "dbg1[3]" IOSTANDARD = LVCMOS33;
-NET "dbg1[2]" IOSTANDARD = LVCMOS33;
-NET "dbg1[1]" IOSTANDARD = LVCMOS33;
-NET "dbg1[0]" IOSTANDARD = LVCMOS33;
-
-
-NET "dbg1[7]" LOC = V11;
-NET "dbg1[6]" LOC = V12;
-NET "dbg1[5]" LOC = V14;
-NET "dbg1[4]" LOC = V15;
-NET "dbg1[3]" LOC = T16;
-NET "dbg1[2]" LOC = U14;
-NET "dbg1[1]" LOC = T15;
-NET "dbg1[0]" LOC = V16;
-
-
 NET "kbdata" PULLUP;
 NET "kbclk" PULLUP;
 

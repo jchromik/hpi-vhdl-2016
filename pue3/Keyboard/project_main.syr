@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: project_main.prj
@@ -142,14 +142,14 @@ Elaborating entity <scanner> (architecture <Behavioral>) from library <work>.
 Elaborating entity <output_main> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <key2segments> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 146: led0 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 148: led1 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 150: led2 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 152: led3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 154: led4 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 156: led5 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 158: led6 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 160: led7 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 131: led0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 133: led1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 135: led2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 137: led3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 139: led4 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 141: led5 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 143: led6 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 145: led7 should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -157,9 +157,8 @@ WARNING:HDLCompiler:92 - "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/K
 
 Synthesizing Unit <project_main>.
     Related source file is "/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/project_main.vhd".
-    Found 8-bit register for signal <debug>.
     Summary:
-	inferred   8 D-type flip-flop(s).
+	no macro.
 Unit <project_main> synthesized.
 
 Synthesizing Unit <keyboard_main>.
@@ -198,10 +197,10 @@ WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and l
     Found 17-bit register for signal <mul_ctr>.
     Found 3-bit register for signal <cur_led>.
     Found 8-bit register for signal <led_out>.
-    Found 3-bit adder for signal <cur_led[2]_GND_11_o_add_37_OUT> created at line 135.
-    Found 17-bit adder for signal <mul_ctr[16]_GND_11_o_add_38_OUT> created at line 137.
+    Found 3-bit adder for signal <cur_led[2]_GND_11_o_add_37_OUT> created at line 120.
+    Found 17-bit adder for signal <mul_ctr[16]_GND_11_o_add_38_OUT> created at line 122.
     Found 15-bit 8-to-1 multiplexer for signal <segment_out> created at line 39.
-    Found 17-bit comparator greater for signal <n0049> created at line 133
+    Found 17-bit comparator greater for signal <n0049> created at line 118
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  85 D-type flip-flop(s).
@@ -222,14 +221,14 @@ Macro Statistics
 # Adders/Subtractors                                   : 2
  17-bit adder                                          : 1
  3-bit adder                                           : 1
-# Registers                                            : 15
+# Registers                                            : 14
  1-bit register                                        : 1
  11-bit register                                       : 1
  17-bit register                                       : 1
  2-bit register                                        : 1
  3-bit register                                        : 1
  7-bit register                                        : 8
- 8-bit register                                        : 2
+ 8-bit register                                        : 1
 # Comparators                                          : 1
  17-bit comparator greater                             : 1
 # Multiplexers                                         : 2
@@ -255,8 +254,8 @@ Macro Statistics
 # Counters                                             : 2
  17-bit up counter                                     : 1
  3-bit up counter                                      : 1
-# Registers                                            : 86
- Flip-Flops                                            : 86
+# Registers                                            : 78
+ Flip-Flops                                            : 78
 # Comparators                                          : 1
  17-bit comparator greater                             : 1
 # Multiplexers                                         : 2
@@ -285,8 +284,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 106
- Flip-Flops                                            : 106
+# Registers                                            : 98
+ Flip-Flops                                            : 98
 
 =========================================================================
 
@@ -322,17 +321,17 @@ Primitive and Black Box Usage:
 #      MUXF7                       : 9
 #      VCC                         : 1
 #      XORCY                       : 17
-# FlipFlops/Latches                : 106
-#      FD                          : 65
+# FlipFlops/Latches                : 98
+#      FD                          : 57
 #      FDE                         : 16
 #      FDP                         : 2
 #      FDPE                        : 11
 #      FDR                         : 12
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 34
+# IO Buffers                       : 26
 #      IBUF                        : 3
-#      OBUF                        : 31
+#      OBUF                        : 23
 
 Device utilization summary:
 ---------------------------
@@ -350,12 +349,11 @@ Slice Logic Distribution:
    Number with an unused Flip Flop:      67  out of    165    40%  
    Number with an unused LUT:             1  out of    165     0%  
    Number of fully used LUT-FF pairs:    97  out of    165    58%  
-   Number of unique control sets:         8
+   Number of unique control sets:         7
 
 IO Utilization: 
- Number of IOs:                          35
- Number of bonded IOBs:                  35  out of    210    16%  
-    IOB Flip Flops/Latches:               8
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    210    12%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
@@ -381,10 +379,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-keyboard0/scanner0/dscan_0         | NONE(debug_0)          | 8     |
 clk                                | BUFGP                  | 98    |
 -----------------------------------+------------------------+-------+
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -467,25 +463,6 @@ Offset:              2.454ns (Levels of Logic = 3)
                                        (39.5% logic, 60.5% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'keyboard0/scanner0/dscan_0'
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Offset:              0.877ns (Levels of Logic = 1)
-  Source:            debug_7 (FF)
-  Destination:       dbg1<7> (PAD)
-  Source Clock:      keyboard0/scanner0/dscan_0 falling
-
-  Data Path: debug_7 to dbg1<7>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               1   0.478   0.399  debug_7 (debug_7)
-     OBUF:I->O                 0.000          dbg1_7_OBUF (dbg1<7>)
-    ----------------------------------------
-    Total                      0.877ns (0.478ns logic, 0.399ns route)
-                                       (54.5% logic, 45.5% route)
-
-=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
@@ -498,26 +475,18 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 clk            |    3.302|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock keyboard0/scanner0/dscan_0
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    1.058|         |
----------------+---------+---------+---------+---------+
-
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.48 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.70 secs
  
 --> 
 
 
-Total memory usage is 507552 kilobytes
+Total memory usage is 507512 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    9 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 

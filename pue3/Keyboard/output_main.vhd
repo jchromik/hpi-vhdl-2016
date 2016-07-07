@@ -46,7 +46,7 @@ component key2segments is port (
     segments : out  STD_LOGIC_VECTOR (6 downto 0));
 end component;
 
-signal isE0, isF0, ce, stw_q: STD_LOGIC;
+signal isE0, isF0, stw_q: STD_LOGIC;
 signal segments : STD_LOGIC_VECTOR(6 downto 0);
 signal mul_ctr : Integer range 0 to 100000;
 signal cur_led : Integer range 0 to 7;
@@ -92,8 +92,7 @@ begin
 	stw : process (isE0, isF0, ready, clk)
 	begin
 	
-	if clk'event and clk = '1' then
-		if ready = '1' then
+	if clk'event and clk = '1' and ready = '1' then
 			if stw_q = '0' then
 				if isE0 = '0' AND isF0 = '0' then
 					led7 <= led6;
@@ -106,26 +105,12 @@ begin
 					led0 <= segments;
 				elsif isE0 = '0' AND isF0 = '1' then
 					stw_q <= '1';
-					ce <= '0';
-				else
-					ce <= '0';
 				end if;
 			else
 				stw_q <= '0';
-				ce <= '0';
 			end if;
-		else
-			ce <= '0';
-		end if;
 	end if;
 	end process stw;
-	
-	shift : process(clk, ce)
-	begin
-		if(ce = '1') then
-			
-		end if;
-	end process shift;
 	
 	ctr : process(clk)
 	begin
