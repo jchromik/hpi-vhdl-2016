@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Jul  7 15:56:09 2016
+# Process ID: 29754
+# Log file: /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/planAhead_run_2/planAhead.log
+# Journal file: /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin M1 [get_ports {segment_out[14]}]
+endgroup

@@ -1,3 +1,0 @@
-vhdl work "scanner.vhd"
-vhdl work "RF_fetch.vhd"
-vhdl work "keyboard-main.vhd"

@@ -1,9 +1,0 @@
-[Inputs]
-ready
-reset
-clk
-=scancode[7:0]=
-[Outputs]
-segment_out
-=led_out[7:0]=
-[BiDir]

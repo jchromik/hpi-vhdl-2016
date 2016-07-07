@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Jul  7 16:29:44 2016
+# Process ID: 31959
+# Log file: /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/ledTest/planAhead_run_2/planAhead.log
+# Journal file: /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/ledTest/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/ledTest/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property drive 4 [get_ports [list {segment_out[14]} {segment_out[13]} {segment_out[12]} {segment_out[11]} {segment_out[10]} {segment_out[9]} {segment_out[8]} {segment_out[7]} {segment_out[6]} {segment_out[5]} {segment_out[4]} {segment_out[3]} {segment_out[2]} {segment_out[1]} {segment_out[0]}]]
+set_property drive 12 [get_ports [list {segment_out[14]} {segment_out[13]} {segment_out[12]} {segment_out[11]} {segment_out[10]} {segment_out[9]} {segment_out[8]} {segment_out[7]} {segment_out[6]} {segment_out[5]} {segment_out[4]} {segment_out[3]} {segment_out[2]} {segment_out[1]} {segment_out[0]}]]
+set_property pulltype PULLDOWN [get_ports [list {segment_out[14]} {segment_out[13]} {segment_out[12]} {segment_out[11]} {segment_out[10]} {segment_out[9]} {segment_out[8]} {segment_out[7]} {segment_out[6]} {segment_out[5]} {segment_out[4]} {segment_out[3]} {segment_out[2]} {segment_out[1]} {segment_out[0]}]]
+set_property pulltype NONE [get_ports [list {segment_out[14]} {segment_out[13]} {segment_out[12]} {segment_out[11]} {segment_out[10]} {segment_out[9]} {segment_out[8]} {segment_out[7]} {segment_out[6]} {segment_out[5]} {segment_out[4]} {segment_out[3]} {segment_out[2]} {segment_out[1]} {segment_out[0]}]]

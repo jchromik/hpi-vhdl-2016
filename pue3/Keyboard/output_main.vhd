@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -35,11 +36,30 @@ entity output_main is
            reset : in  STD_LOGIC;
            clk : in  STD_LOGIC;
            led_out : out  STD_LOGIC_VECTOR(7 downto 0);
-           segment_out : out  STD_LOGIC_VECTOR(11 downto 0));
+           segment_out : out  STD_LOGIC_VECTOR(14 downto 0));
 end output_main;
 
 architecture Behavioral of output_main is
-signal isE0, isF0: STD_LOGIC;
+
+component key2segments is port (
+	scancode : in  STD_LOGIC_VECTOR(7 downto 0);
+    segments : out  STD_LOGIC_VECTOR (6 downto 0));
+end component;
+
+signal isE0, isF0, ce, stw_q: STD_LOGIC;
+signal segments : STD_LOGIC_VECTOR(6 downto 0);
+signal mul_ctr : Integer range 0 to 100000;
+signal cur_led : Integer range 0 to 7;
+
+signal	led0 : STD_LOGIC_VECTOR (6 downto 0);
+signal	led1 : STD_LOGIC_VECTOR (6 downto 0);
+signal	led2 : STD_LOGIC_VECTOR (6 downto 0);
+signal	led3 : STD_LOGIC_VECTOR (6 downto 0);
+signal	led4 : STD_LOGIC_VECTOR (6 downto 0);
+signal	led5 : STD_LOGIC_VECTOR (6 downto 0);
+signal	led6 : STD_LOGIC_VECTOR (6 downto 0);
+signal	led7 : STD_LOGIC_VECTOR (6 downto 0);
+
 begin
 	
 	ef0_detector : process(scancode)
@@ -58,12 +78,89 @@ begin
 			
 	end process ef0_detector;
 	
-	led_out_pipe: process(isE0, isF0, ready, scancode)
+	key2seg1: key2segments port map (scancode, segments);
+	
+	
+	
+	led_out_pipe: process(isE0, isF0, ready, scancode, clk, segments)
 	begin
-		if (not (isE0 = '1' and isF0 = '1')) and ready = '1' then
+		if clk'event and clk = '1' and (not (isE0 = '1' or isF0 = '1')) and ready = '1' then
 			led_out <= scancode;
 		end if; 
 	end process led_out_pipe;
+	
+	stw : process (isE0, isF0, ready, clk)
+	begin
+	
+	if clk'event and clk = '1' then
+		if ready = '1' then
+			if stw_q = '0' then
+				if isE0 = '0' AND isF0 = '0' then
+					led7 <= led6;
+					led6 <= led5;
+					led5 <= led4;
+					led4 <= led3;
+					led3 <= led2;
+					led2 <= led1;
+					led1 <= led0;
+					led0 <= segments;
+				elsif isE0 = '0' AND isF0 = '1' then
+					stw_q <= '1';
+					ce <= '0';
+				else
+					ce <= '0';
+				end if;
+			else
+				stw_q <= '0';
+				ce <= '0';
+			end if;
+		else
+			ce <= '0';
+		end if;
+	end if;
+	end process stw;
+	
+	shift : process(clk, ce)
+	begin
+		if(ce = '1') then
+			
+		end if;
+	end process shift;
+	
+	ctr : process(clk)
+	begin
+		if(clk'event and clk = '1') then
+			if mul_ctr >= 99999 then
+				mul_ctr <= 0;
+				cur_led <= cur_led + 1;
+			else
+				mul_ctr <= mul_ctr + 1;
+			end if;
+				
+		end if;
+	end process ctr;
+	
+	multiplex : process (cur_led)
+	begin
+		if cur_led = 0 then
+			segment_out <= "11111110" & led0;
+		elsif cur_led = 1 then
+			segment_out <= "11111101" & led1;
+		elsif cur_led = 2 then
+			segment_out <= "11111011" & led2;
+		elsif cur_led = 3 then
+			segment_out <= "11110111" & led3;
+		elsif cur_led = 4 then
+			segment_out <= "11101111" & led4;
+		elsif cur_led = 5 then
+			segment_out <= "11011111" & led5;
+		elsif cur_led = 6 then
+			segment_out <= "10111111" & led6;
+		else
+			segment_out <= "01111111" & led7;		
+		end if;
+	end process multiplex;
+	
 	
 end Behavioral;
 

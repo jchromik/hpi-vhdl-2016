@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jul 07 16:40:10 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "segment_out<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "segment_out<1>" LOCATE = SITE "T11" LEVEL 1;
+COMP "segment_out<2>" LOCATE = SITE "P15" LEVEL 1;
+COMP "segment_out<3>" LOCATE = SITE "K13" LEVEL 1;
+COMP "segment_out<4>" LOCATE = SITE "K16" LEVEL 1;
+COMP "segment_out<5>" LOCATE = SITE "R10" LEVEL 1;
+COMP "segment_out<6>" LOCATE = SITE "T10" LEVEL 1;
+COMP "segment_out<7>" LOCATE = SITE "J17" LEVEL 1;
+COMP "segment_out<8>" LOCATE = SITE "J18" LEVEL 1;
+COMP "segment_out<9>" LOCATE = SITE "T9" LEVEL 1;
+COMP "segment_out<10>" LOCATE = SITE "J14" LEVEL 1;
+COMP "segment_out<11>" LOCATE = SITE "P14" LEVEL 1;
+COMP "segment_out<12>" LOCATE = SITE "T14" LEVEL 1;
+COMP "segment_out<13>" LOCATE = SITE "K2" LEVEL 1;
+COMP "segment_out<14>" LOCATE = SITE "U13" LEVEL 1;
+SCHEMATIC END;
+

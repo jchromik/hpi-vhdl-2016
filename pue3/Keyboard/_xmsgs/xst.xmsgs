@@ -5,58 +5,34 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 146: <arg fmt="%s" index="1">led0</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 148: <arg fmt="%s" index="1">led1</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_out&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 150: <arg fmt="%s" index="1">led2</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_out&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 152: <arg fmt="%s" index="1">led3</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_out&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 154: <arg fmt="%s" index="1">led4</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_out&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 156: <arg fmt="%s" index="1">led5</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_out&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 158: <arg fmt="%s" index="1">led6</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_out&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue3/Keyboard/output_main.vhd" Line 160: <arg fmt="%s" index="1">led7</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_out&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">led_out&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">led_out_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">output_main</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">led_out_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">output_main</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">led_out_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">output_main</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">led_out_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">output_main</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">led_out_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">output_main</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">led_out_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">output_main</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">led_out_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">output_main</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">led_out_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">output_main</arg>&gt;.
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>
