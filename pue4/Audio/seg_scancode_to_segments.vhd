@@ -4,7 +4,7 @@
 -- 
 -- Create Date:    15:08:31 07/07/2016 
 -- Design Name: 
--- Module Name:    led_scancode_to_segments - Behavioral 
+-- Module Name:    seg_scancode_to_segments - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,12 +29,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity led_scancode_to_segments is port (
+entity seg_scancode_to_segments is port (
 	scancode 		: in  STD_LOGIC_VECTOR(7 downto 0);
 	segment_repr	: out  STD_LOGIC_VECTOR(6 downto 0));
-end led_scancode_to_segments;
+end seg_scancode_to_segments;
 
-architecture Behavioral of led_scancode_to_segments is
+architecture Behavioral of seg_scancode_to_segments is
 begin
 
 	process(scancode)

@@ -48,7 +48,7 @@ architecture Behavioral of project_main is
 		scancode	: out STD_LOGIC_VECTOR(7 downto 0));
 	end component;
 
-	component led_out is port (
+	component segment_out is port (
 		clk		: in  STD_LOGIC;
 		ready		: in  STD_LOGIC;
 		reset		: in  STD_LOGIC;
@@ -61,7 +61,7 @@ architecture Behavioral of project_main is
 begin
 	
 	keyboard_in0: keyboard_in port map (clk, kbclk, kbdata, reset, ready, scancode);
-	led_out0: led_out port map (clk, ready, reset, scancode, segments);
+	segment_out0: segment_out port map (clk, ready, reset, scancode, segments);
 	
 end Behavioral;
 

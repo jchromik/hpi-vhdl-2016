@@ -4,7 +4,7 @@
 -- 
 -- Create Date:    14:45:03 07/06/2016 
 -- Design Name: 
--- Module Name:    led_out - Behavioral 
+-- Module Name:    segment_out - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -30,16 +30,16 @@ use IEEE.NUMERIC_STD;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity led_out is port (
+entity segment_out is port (
 	clk		: in  STD_LOGIC;
 	ready		: in  STD_LOGIC;
 	reset		: in  STD_LOGIC;
 	scancode	: in  STD_LOGIC_VECTOR(7 downto 0);
 	segments	: out STD_LOGIC_VECTOR(14 downto 0));
-end led_out;
+end segment_out;
 
-architecture Behavioral of led_out is
-	component led_scancode_to_segments is port (
+architecture Behavioral of segment_out is
+	component seg_scancode_to_segments is port (
 		scancode			: in  STD_LOGIC_VECTOR(7 downto 0);
 		segment_repr	: out  STD_LOGIC_VECTOR(6 downto 0));
 	end component;
@@ -59,7 +59,7 @@ architecture Behavioral of led_out is
 	signal	digit7 : STD_LOGIC_VECTOR (6 downto 0);
 begin
 	
-	led_scancode_to_segments0: led_scancode_to_segments port map (scancode, segment_repr);
+	seg_scancode_to_segments0: seg_scancode_to_segments port map (scancode, segment_repr);
 	
 	ef0_detector : process(scancode)
 	begin
