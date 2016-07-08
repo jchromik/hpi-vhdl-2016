@@ -35,7 +35,6 @@ entity project_main is port (
 	reset		: in  STD_LOGIC;
 	kbclk		: in  STD_LOGIC;
 	kbdata	: in  STD_LOGIC;
-	leds		: out STD_LOGIC_VECTOR(7 downto 0);
 	segments	: out STD_LOGIC_VECTOR(14 downto 0));
 end project_main;
 
@@ -54,7 +53,6 @@ architecture Behavioral of project_main is
 		ready		: in  STD_LOGIC;
 		reset		: in  STD_LOGIC;
 		scancode	: in  STD_LOGIC_VECTOR(7 downto 0);
-		leds		: out STD_LOGIC_VECTOR(7 downto 0);
 		segments	: out STD_LOGIC_VECTOR(14 downto 0));
 	end component;
 
@@ -63,7 +61,7 @@ architecture Behavioral of project_main is
 begin
 	
 	keyboard_in0: keyboard_in port map (clk, kbclk, kbdata, reset, ready, scancode);
-	led_out0: led_out port map (clk, ready, reset, scancode, leds, segments);
+	led_out0: led_out port map (clk, ready, reset, scancode, segments);
 	
 end Behavioral;
 
