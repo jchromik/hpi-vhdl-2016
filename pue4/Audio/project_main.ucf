@@ -1,0 +1,49 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "segment_out[14]" LOC = U13;
+NET "segment_out[13]" LOC = K2;
+NET "segment_out[12]" LOC = T14;
+NET "segment_out[11]" LOC = P14;
+NET "segment_out[10]" LOC = J14;
+NET "segment_out[9]" LOC = T9;
+NET "segment_out[8]" LOC = J18;
+NET "segment_out[7]" LOC = J17;
+NET "segment_out[6]" LOC = T10;
+NET "segment_out[5]" LOC = R10;
+NET "segment_out[4]" LOC = K16;
+NET "segment_out[3]" LOC = K13;
+NET "segment_out[2]" LOC = P15;
+NET "segment_out[1]" LOC = T11;
+NET "segment_out[0]" LOC = L18;
+
+NET "audio" LOC = A11;
+NET "clk" LOC = E3;
+NET "kbclk" LOC = F4;
+NET "kbdata" LOC = B2;
+NET "reset" LOC = N17;
+
+# PlanAhead Generated IO constraints 
+
+NET "segment_out[14]" IOSTANDARD = LVCMOS33;
+NET "segment_out[13]" IOSTANDARD = LVCMOS33;
+NET "segment_out[12]" IOSTANDARD = LVCMOS33;
+NET "segment_out[11]" IOSTANDARD = LVCMOS33;
+NET "segment_out[10]" IOSTANDARD = LVCMOS33;
+NET "segment_out[9]" IOSTANDARD = LVCMOS33;
+NET "segment_out[8]" IOSTANDARD = LVCMOS33;
+NET "segment_out[7]" IOSTANDARD = LVCMOS33;
+NET "segment_out[6]" IOSTANDARD = LVCMOS33;
+NET "segment_out[5]" IOSTANDARD = LVCMOS33;
+NET "segment_out[4]" IOSTANDARD = LVCMOS33;
+NET "segment_out[3]" IOSTANDARD = LVCMOS33;
+NET "segment_out[2]" IOSTANDARD = LVCMOS33;
+NET "segment_out[1]" IOSTANDARD = LVCMOS33;
+NET "segment_out[0]" IOSTANDARD = LVCMOS33;
+
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "kbclk" IOSTANDARD = LVCMOS33;
+NET "kbdata" IOSTANDARD = LVCMOS33;
+NET "reset" IOSTANDARD = LVCMOS33;
+NET "audio" IOSTANDARD = LVCMOS33;
+NET "audio" PULLUP;
