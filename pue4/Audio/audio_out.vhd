@@ -43,13 +43,11 @@ architecture Behavioral of audio_out is
 		scancode			: in  STD_LOGIC_VECTOR(7 downto 0);
 		clock_divisor	: out INTEGER);
 	end component;
-
-	type audio_clock_states is (HIGH, LOW);
 	
 	signal clock_divisor : INTEGER := 378788; -- for 264 Hz (c')
 	signal clock_counter_max : INTEGER := 0;
 	signal clock_counter : INTEGER := 0;
-	signal audio_clock_state : audio_clock_states := LOW;
+	signal audio_state : STD_LOGIC := '0';
 begin
 
 	audio_scancode_to_divisor0 : audio_scancode_to_divisor port map (scancode, clock_divisor);
@@ -59,10 +57,10 @@ begin
 		if clk'event and clk = '1' then
 			if clock_counter >= clock_counter_max then
 				clock_counter <= 0;
-				if audio_clock_state <= LOW then
-					audio_clock_state <= HIGH;
+				if audio_state = '0' then
+					audio_state <= '1';
 				else
-					audio_clock_state <= LOW;
+					audio_state <= '0';
 				end if;
 			else
 				clock_counter <= clock_counter + 1;
@@ -77,5 +75,7 @@ begin
 		clock_counter_max <= 100000000 / (clock_divisor * 2);
 	end process divisor_to_max_counter;
 
+	audio <= audio_state;
+	
 end Behavioral;
 
