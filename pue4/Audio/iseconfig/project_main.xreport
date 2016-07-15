@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-07-10T20:44:43</DateModified>
+  <DateModified>2016-07-13T17:47:40</DateModified>
   <ModuleName>project_main</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/scandic/Documents/hpi-vhdl-2016/pue4/Audio/iseconfig/project_main.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/scandic/Documents/hpi-vhdl-2016/pue4/Audio/</ImplementationReportsDirectory>
+  <SavedFilePath>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue4/Audio/iseconfig/project_main.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/mnt/Daten/Dokumente/studium/vhdl/hpi-vhdl-2016/pue4/Audio/</ImplementationReportsDirectory>
   <DateInitialized>2016-07-08T13:10:22</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

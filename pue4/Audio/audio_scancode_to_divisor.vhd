@@ -42,12 +42,12 @@ begin
 process(scancode)
 	begin
 		case scancode is
-			when "00100011" => clock_divisor <= 336700; -- 297 Hz (d')
-			when "00100100" => clock_divisor <= 303030; -- 330 Hz (e')
-			when "00101011" => clock_divisor <= 284091; -- 352 Hz (f')
-			when "00110100" => clock_divisor <= 252525; -- 396 Hz (g')
-			when "00011100" => clock_divisor <= 227273; -- 440 Hz (a')
-			when "00110011" => clock_divisor <= 202020; -- 495 Hz (h')
+			when "00100011" => clock_divisor <= 3367000; -- 297 Hz (d')
+			when "00100100" => clock_divisor <= 30303000; -- 330 Hz (e')
+			when "00101011" => clock_divisor <= 284091000; -- 352 Hz (f')
+			when "00110100" => clock_divisor <= 25252; -- 396 Hz (g')
+			when "00011100" => clock_divisor <= 22727; -- 440 Hz (a')
+			when "00110011" => clock_divisor <= 2020; -- 495 Hz (h')
 			when others => clock_divisor <= 378788; -- 264 Hz (c');
 		end case;
 	end process;

@@ -45,8 +45,8 @@ architecture Behavioral of audio_out is
 	end component;
 	
 	signal clock_divisor : INTEGER := 378788; -- for 264 Hz (c')
-	signal clock_counter_max : INTEGER := 0;
-	signal clock_counter : INTEGER := 0;
+	signal clock_counter_max : INTEGER range 0 to 500000000 := 0;
+	signal clock_counter : INTEGER range 0 to 500000000 := 0;
 	signal audio_state : STD_LOGIC := '0';
 begin
 
@@ -72,7 +72,8 @@ begin
 	begin
 		-- 100 MHz divided by clock_divisor
 		-- result divided again by 2 to achive alternating high and low with correct frequency
-		clock_counter_max <= 100000000 / (clock_divisor * 2);
+		--clock_counter_max <= 100000000 / (clock_divisor * 2);
+		clock_counter_max <= 500000;
 	end process divisor_to_max_counter;
 
 	audio <= audio_state;
