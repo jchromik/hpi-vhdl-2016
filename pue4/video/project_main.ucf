@@ -1,0 +1,78 @@
+
+NET "segments[14]" LOC = U13;
+NET "segments[13]" LOC = K2;
+NET "segments[12]" LOC = T14;
+NET "segments[11]" LOC = P14;
+NET "segments[10]" LOC = J14;
+NET "segments[9]" LOC = T9;
+NET "segments[8]" LOC = J18;
+NET "segments[7]" LOC = J17;
+NET "segments[6]" LOC = T10;
+NET "segments[5]" LOC = R10;
+NET "segments[4]" LOC = K16;
+NET "segments[3]" LOC = K13;
+NET "segments[2]" LOC = P15;
+NET "segments[1]" LOC = T11;
+NET "segments[0]" LOC = L18;
+
+NET "segments[14]" IOSTANDARD = LVCMOS33;
+NET "segments[13]" IOSTANDARD = LVCMOS33;
+NET "segments[12]" IOSTANDARD = LVCMOS33;
+NET "segments[11]" IOSTANDARD = LVCMOS33;
+NET "segments[10]" IOSTANDARD = LVCMOS33;
+NET "segments[9]" IOSTANDARD = LVCMOS33;
+NET "segments[8]" IOSTANDARD = LVCMOS33;
+NET "segments[7]" IOSTANDARD = LVCMOS33;
+NET "segments[6]" IOSTANDARD = LVCMOS33;
+NET "segments[5]" IOSTANDARD = LVCMOS33;
+NET "segments[4]" IOSTANDARD = LVCMOS33;
+NET "segments[3]" IOSTANDARD = LVCMOS33;
+NET "segments[2]" IOSTANDARD = LVCMOS33;
+NET "segments[1]" IOSTANDARD = LVCMOS33;
+NET "segments[0]" IOSTANDARD = LVCMOS33;
+
+NET "kbclk" LOC = F4;
+NET "kbdata" LOC = B2;
+NET "reset" LOC = N17;
+
+NET "kbclk" IOSTANDARD = LVCMOS33;
+NET "kbdata" IOSTANDARD = LVCMOS33;
+NET "reset" IOSTANDARD = LVCMOS33;
+
+NET "blue[3]" IOSTANDARD = LVCMOS33;
+NET "blue[2]" IOSTANDARD = LVCMOS33;
+NET "blue[1]" IOSTANDARD = LVCMOS33;
+NET "blue[0]" IOSTANDARD = LVCMOS33;
+NET "green[3]" IOSTANDARD = LVCMOS33;
+NET "green[2]" IOSTANDARD = LVCMOS33;
+NET "green[1]" IOSTANDARD = LVCMOS33;
+NET "green[0]" IOSTANDARD = LVCMOS33;
+NET "red[3]" IOSTANDARD = LVCMOS33;
+NET "red[2]" IOSTANDARD = LVCMOS33;
+NET "red[1]" IOSTANDARD = LVCMOS33;
+NET "red[0]" IOSTANDARD = LVCMOS33;
+NET "hsync" IOSTANDARD = LVCMOS33;
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "vsync" IOSTANDARD = LVCMOS33;
+
+
+NET "blue[3]" LOC = D8;
+NET "blue[2]" LOC = D7;
+NET "blue[1]" LOC = C7;
+NET "blue[0]" LOC = B7;
+NET "green[3]" LOC = A6;
+NET "green[2]" LOC = B6;
+NET "green[1]" LOC = A5;
+NET "green[0]" LOC = C6;
+NET "red[3]" LOC = A4;
+NET "red[2]" LOC = C5;
+NET "red[1]" LOC = B4;
+NET "red[0]" LOC = A3;
+NET "clk" LOC = E3;
+NET "hsync" LOC = B11;
+NET "vsync" LOC = B12;
+
+# PlanAhead Generated physical constraints 
+
+NET "dbg" LOC = V11;
+NET "dbg" IOSTANDARD = LVCMOS33;

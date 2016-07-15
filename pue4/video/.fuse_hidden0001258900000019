@@ -1,0 +1,13 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'video_main'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o video_main_map.ncd video_main.ngd video_main.pcf 
+Target Device  : xc7a100t
+Target Package : csg324
+Target Speed   : -1
+Mapper Version : artix7 -- $Revision: 1.55 $
+Mapped Date    : Mon Jul 11 15:06:34 2016
